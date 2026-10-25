@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shebang-sentry"
+version = "0.1.0"
+description = "Inspect Linux script launch headers and Git executable modes without running scripts"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "KanadeK"}]
+dependencies = []
+
+[project.scripts]
+shebang-sentry = "shebang_sentry.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/KanadeK/shebang-sentry"
+Issues = "https://github.com/KanadeK/shebang-sentry/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

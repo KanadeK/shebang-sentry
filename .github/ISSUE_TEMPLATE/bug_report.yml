@@ -1,0 +1,14 @@
+name: Bug report
+description: Report a reproducible defect with synthetic input
+body:
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Include version, OS, command, and a minimal non-sensitive input.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
